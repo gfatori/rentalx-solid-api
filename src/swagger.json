@@ -2,18 +2,16 @@
   "openapi": "3.0.0",
   "info": {
     "title": "RentalX Documentation",
-    "description": "This is an API Rent",
+    "description": "This is an API for Renting cars",
     "version": "1.0.0",
     "contact": {
       "email": "gabriel.fatori@gmail.com"
-    } 
+    }
   },
   "paths": {
     "/categories": {
       "post": {
-        "tags": [
-          "categories"
-        ],
+        "tags": ["categories"],
         "summary": "Create a new category",
         "description": "Create a new category",
         "requestBody": {
@@ -41,8 +39,8 @@
           "201": {
             "description": "Category created"
           },
-        "500": {
-          "description": "Internal server error"
+          "500": {
+            "description": "Internal server error"
           }
         }
       },
@@ -61,10 +59,10 @@
                     "type": "object",
                     "properties": {
                       "name": {
-                        "type":"string"
+                        "type": "string"
                       },
                       "description": {
-                        "type":"string"
+                        "type": "string"
                       }
                     }
                   }
@@ -72,6 +70,73 @@
               }
             }
           }
+        }
+      }
+    },
+    "/categories/import": {
+      "post": {
+        "tags": ["categories"],
+        "summary": "Upload many new categories",
+        "description": "Upload many new categories",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Categories uploaded"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "specifications": {
+      "post": {
+        "tags": ["Specifications"],
+        "summary": "Create a new Specification",
+        "description": "Create a new Specification",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/Specification"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Specification created"
+          },
+          "500": {
+            "description": "Specification already exists!"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Specification": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
         }
       }
     }
