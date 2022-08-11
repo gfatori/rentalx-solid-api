@@ -7,3 +7,5 @@ tmp/*
 dist
 ormconfig.json
 .env
+github_actions
+github_actions.pub
