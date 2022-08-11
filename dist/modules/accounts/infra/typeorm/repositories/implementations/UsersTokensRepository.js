@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.UsersTokensRepository = void 0;
 
-var _AppError = require("@errors/AppError");
+var _AppError = require("../../../../../../errors/AppError");
 
 var _typeorm = require("typeorm");
 

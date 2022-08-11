@@ -5,11 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.carsRoutes = void 0;
 
-var _CreateCarController = require("@modules/cars/useCases/createCar/CreateCarController");
+var _CreateCarController = require("../../../../modules/cars/useCases/createCar/CreateCarController");
 
-var _CreateCarSpecificationController = require("@modules/cars/useCases/createCarSpecification/CreateCarSpecificationController");
+var _CreateCarSpecificationController = require("../../../../modules/cars/useCases/createCarSpecification/CreateCarSpecificationController");
 
-var _listAvailableCarsController = require("@modules/cars/useCases/listAvailableCars/listAvailableCarsController");
+var _listAvailableCarsController = require("../../../../modules/cars/useCases/listAvailableCars/listAvailableCarsController");
 
 var _express = require("express");
 

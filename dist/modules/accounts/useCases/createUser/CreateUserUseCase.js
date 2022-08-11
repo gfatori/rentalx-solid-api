@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.CreateUserUseCase = void 0;
 
-var _AppError = require("@errors/AppError");
+var _AppError = require("../../../../errors/AppError");
 
-var _IUsersRepository = require("@modules/accounts/repositories/IUsersRepository");
+var _IUsersRepository = require("../../repositories/IUsersRepository");
 
 var _bcrypt = require("bcrypt");
 

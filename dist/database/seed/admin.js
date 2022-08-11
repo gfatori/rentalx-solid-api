@@ -1,6 +1,6 @@
 "use strict";
 
-var _index = _interopRequireDefault(require("@database/index"));
+var _ = _interopRequireDefault(require("./.."));
 
 var _bcrypt = require("bcrypt");
 
@@ -10,7 +10,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // import { getConnection } from "typeorm";
 async function create() {
-  const connection = (0, _index.default)("localhost");
+  const connection = (0, _.default)("localhost");
   const id = (0, _uuid.v4)();
   const password = await (0, _bcrypt.hash)("admin", 8);
   await (await connection).query(`INSERT INTO USERS(id, name, email, driver_license, password, is_admin, created_at )

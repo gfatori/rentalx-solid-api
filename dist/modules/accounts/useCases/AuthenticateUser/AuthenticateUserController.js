@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.AuthenticateUserController = void 0;
 
-var _AuthenticateUserUseCase = require("@modules/accounts/useCases/AuthenticateUser/AuthenticateUserUseCase");
+var _AuthenticateUserUseCase = require("./AuthenticateUserUseCase");
 
 var _tsyringe = require("tsyringe");
 

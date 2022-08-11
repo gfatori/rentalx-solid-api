@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ensureUserIsAdmin = ensureUserIsAdmin;
 
-var _AppError = require("@errors/AppError");
+var _AppError = require("../../../../errors/AppError");
 
-var _UsersRepository = require("@modules/accounts/infra/typeorm/repositories/implementations/UsersRepository");
+var _UsersRepository = require("../../../../modules/accounts/infra/typeorm/repositories/implementations/UsersRepository");
 
 async function ensureUserIsAdmin(request, response, next) {
   const {

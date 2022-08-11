@@ -1,14 +1,14 @@
 "use strict";
 
-var _UsersRepository = require("@modules/accounts/infra/typeorm/repositories/implementations/UsersRepository");
+var _UsersRepository = require("../../modules/accounts/infra/typeorm/repositories/implementations/UsersRepository");
 
-var _UsersTokensRepository = require("@modules/accounts/infra/typeorm/repositories/implementations/UsersTokensRepository");
+var _UsersTokensRepository = require("../../modules/accounts/infra/typeorm/repositories/implementations/UsersTokensRepository");
 
-var _CarsRepository = require("@modules/cars/infra/typeorm/repositories/CarsRepository");
+var _CarsRepository = require("../../modules/cars/infra/typeorm/repositories/CarsRepository");
 
-var _CategoriesRepository = require("@modules/cars/infra/typeorm/repositories/CategoriesRepository");
+var _CategoriesRepository = require("../../modules/cars/infra/typeorm/repositories/CategoriesRepository");
 
-var _SpecificationRepository = require("@modules/cars/infra/typeorm/repositories/SpecificationRepository");
+var _SpecificationRepository = require("../../modules/cars/infra/typeorm/repositories/SpecificationRepository");
 
 var _tsyringe = require("tsyringe");
 

@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SpecificationRepository = void 0;
 
-var _Specification = require("@modules/cars/infra/typeorm/entities/Specification");
+var _Specification = require("../entities/Specification");
 
 var _typeorm = require("typeorm");
 

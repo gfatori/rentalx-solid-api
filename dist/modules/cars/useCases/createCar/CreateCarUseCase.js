@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.CreateCarUseCase = void 0;
 
-var _AppError = require("@errors/AppError");
+var _AppError = require("../../../../errors/AppError");
 
-var _ICarsRepository = require("@modules/cars/repositories/ICarsRepository");
+var _ICarsRepository = require("../../repositories/ICarsRepository");
 
 var _tsyringe = require("tsyringe");
 

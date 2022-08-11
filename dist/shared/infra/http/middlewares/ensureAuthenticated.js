@@ -5,11 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ensureAuthenticated = ensureAuthenticated;
 
-var _auth = _interopRequireDefault(require("@config/auth"));
+var _auth = _interopRequireDefault(require("../../../../config/auth"));
 
-var _AppError = require("@errors/AppError");
+var _AppError = require("../../../../errors/AppError");
 
-var _UsersRepository = require("@modules/accounts/infra/typeorm/repositories/implementations/UsersRepository");
+var _UsersRepository = require("../../../../modules/accounts/infra/typeorm/repositories/implementations/UsersRepository");
 
 var _jsonwebtoken = require("jsonwebtoken");
 
