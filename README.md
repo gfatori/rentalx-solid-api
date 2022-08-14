@@ -1,3 +1,5 @@
+Still work in-progress Car Rental system using clean architecture and solid principles.
+
 # Cadastro de Carro
 ### RF
 - [ ] Deve ser possível cadastrar um novo carro
